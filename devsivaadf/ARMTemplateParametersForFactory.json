@@ -11,11 +11,17 @@
 		"AzureDatabricks_linked_service_accessToken": {
 			"value": ""
 		},
+		"AzureFunction1_linked_functionKey": {
+			"value": ""
+		},
 		"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
 			"value": "https://storageaccountforcopy123.blob.core.windows.net/"
 		},
 		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
 			"value": "0322-100525-yk0rh8fc"
+		},
+		"AzureFunction1_linked_properties_typeProperties_functionAppUrl": {
+			"value": "https://siva1233.azurewebsites.net/api/HttpTrigger1?code=kSlsCZY9lg2wDUaEhTLmRP2I_bQNWj5Z5xPTnD5mDSghAzFu4AHa2Q=="
 		}
 	}
 }

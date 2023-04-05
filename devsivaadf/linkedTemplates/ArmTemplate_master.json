@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks_linked_service'"
 		},
+		"AzureFunction1_linked_functionKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'functionKey' of 'AzureFunction1_linked'"
+		},
 		"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
 			"type": "string",
 			"defaultValue": "https://storageaccountforcopy123.blob.core.windows.net/"
@@ -22,6 +26,10 @@
 		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
 			"type": "string",
 			"defaultValue": "0322-100525-yk0rh8fc"
+		},
+		"AzureFunction1_linked_properties_typeProperties_functionAppUrl": {
+			"type": "string",
+			"defaultValue": "https://siva1233.azurewebsites.net/api/HttpTrigger1?code=kSlsCZY9lg2wDUaEhTLmRP2I_bQNWj5Z5xPTnD5mDSghAzFu4AHa2Q=="
 		},
 		"containerUri": {
 			"type": "string",
@@ -56,11 +64,17 @@
 					"AzureDatabricks_linked_service_accessToken": {
 						"value": "[parameters('AzureDatabricks_linked_service_accessToken')]"
 					},
+					"AzureFunction1_linked_functionKey": {
+						"value": "[parameters('AzureFunction1_linked_functionKey')]"
+					},
 					"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
 						"value": "[parameters('AzureBlobStorage1_properties_typeProperties_serviceEndpoint')]"
 					},
 					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
 						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					},
+					"AzureFunction1_linked_properties_typeProperties_functionAppUrl": {
+						"value": "[parameters('AzureFunction1_linked_properties_typeProperties_functionAppUrl')]"
 					}
 				}
 			},
