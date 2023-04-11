@@ -22,6 +22,9 @@
 		},
 		"AzureFunction1_linked_properties_typeProperties_functionAppUrl": {
 			"value": "https://siva1233.azurewebsites.net/api/HttpTrigger1?code=kSlsCZY9lg2wDUaEhTLmRP2I_bQNWj5Z5xPTnD5mDSghAzFu4AHa2Q=="
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://dummy.restapiexample.com/api/v1/employees"
 		}
 	}
 }

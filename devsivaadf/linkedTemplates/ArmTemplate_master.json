@@ -31,6 +31,10 @@
 			"type": "string",
 			"defaultValue": "https://siva1233.azurewebsites.net/api/HttpTrigger1?code=kSlsCZY9lg2wDUaEhTLmRP2I_bQNWj5Z5xPTnD5mDSghAzFu4AHa2Q=="
 		},
+		"RestService1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dummy.restapiexample.com/api/v1/employees"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -75,6 +79,9 @@
 					},
 					"AzureFunction1_linked_properties_typeProperties_functionAppUrl": {
 						"value": "[parameters('AzureFunction1_linked_properties_typeProperties_functionAppUrl')]"
+					},
+					"RestService1_properties_typeProperties_url": {
+						"value": "[parameters('RestService1_properties_typeProperties_url')]"
 					}
 				}
 			},
