@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1",
+	"name": "Rest_api_pipeline",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy_data_from_rest_api_to_azure_blob",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -42,61 +42,41 @@
 							{
 								"source": {
 									"path": "$['status']"
-								},
-								"sink": {
-									"ordinal": 1
 								}
 							},
 							{
 								"source": {
-									"path": "$['data'][0]['id']"
-								},
-								"sink": {
-									"ordinal": 2
+									"path": "['id']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['data'][0]['employee_name']"
-								},
-								"sink": {
-									"ordinal": 3
+									"path": "['employee_name']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['data'][0]['employee_salary']"
-								},
-								"sink": {
-									"ordinal": 4
+									"path": "['employee_salary']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['data'][0]['employee_age']"
-								},
-								"sink": {
-									"ordinal": 5
+									"path": "['employee_age']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['data'][0]['profile_image']"
-								},
-								"sink": {
-									"ordinal": 6
+									"path": "['profile_image']"
 								}
 							},
 							{
 								"source": {
 									"path": "$['message']"
-								},
-								"sink": {
-									"ordinal": 7
 								}
 							}
 						],
-						"collectionReference": "$['data']"
+						"collectionReference": "$['data']",
+						"mapComplexValuesToString": false
 					}
 				},
 				"inputs": [
