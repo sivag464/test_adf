@@ -32,7 +32,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".txt"
+							"fileExtension": ".csv"
 						}
 					},
 					"enableStaging": false,
@@ -42,36 +42,57 @@
 							{
 								"source": {
 									"path": "$['status']"
+								},
+								"sink": {
+									"name": "status"
 								}
 							},
 							{
 								"source": {
 									"path": "['id']"
+								},
+								"sink": {
+									"name": "id"
 								}
 							},
 							{
 								"source": {
 									"path": "['employee_name']"
+								},
+								"sink": {
+									"name": "employee_name"
 								}
 							},
 							{
 								"source": {
 									"path": "['employee_salary']"
+								},
+								"sink": {
+									"name": "employee_salary"
 								}
 							},
 							{
 								"source": {
 									"path": "['employee_age']"
+								},
+								"sink": {
+									"name": "employee_age"
 								}
 							},
 							{
 								"source": {
 									"path": "['profile_image']"
+								},
+								"sink": {
+									"name": "profile_image"
 								}
 							},
 							{
 								"source": {
 									"path": "$['message']"
+								},
+								"sink": {
+									"name": "message"
 								}
 							}
 						],
