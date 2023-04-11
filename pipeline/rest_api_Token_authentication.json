@@ -54,6 +54,9 @@
 				}
 			}
 		],
+		"folder": {
+			"name": "Rest_api"
+		},
 		"annotations": []
 	}
 }
